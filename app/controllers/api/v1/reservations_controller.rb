@@ -48,7 +48,7 @@ module Api
     
         # Only allow a list of trusted parameters through.
         def reservation_params
-          params.fetch(:reservation, {})
+          params.permit(:date, :city, :user_id, :event_id)
         end
     end    
   end

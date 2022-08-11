@@ -48,7 +48,7 @@ module Api
 
     # Only allow a list of trusted parameters through.
     def event_params
-      params.fetch(:event, {})
+      params.permit(:name, :price, :start_date, :end_date, :location)
     end
 end
 

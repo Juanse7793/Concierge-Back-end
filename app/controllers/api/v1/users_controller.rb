@@ -48,7 +48,7 @@ module Api
     
         # Only allow a list of trusted parameters through.
         def user_params
-          params.fetch(:user, {})
+          params.permit(:name)
         end
     end
     
