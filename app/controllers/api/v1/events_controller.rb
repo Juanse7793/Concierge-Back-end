@@ -1,4 +1,6 @@
-class EventsController < ApplicationController
+module Api
+  module V1
+  class EventsController < ApplicationController
   before_action :set_event, only: %i[ show update destroy ]
 
   # GET /events
@@ -49,3 +51,7 @@ class EventsController < ApplicationController
       params.fetch(:event, {})
     end
 end
+
+  end
+end
+
