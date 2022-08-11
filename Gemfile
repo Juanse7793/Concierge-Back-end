@@ -9,7 +9,6 @@ gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-
 gem 'pg', '~> 1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
