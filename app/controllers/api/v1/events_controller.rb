@@ -17,12 +17,17 @@ module Api
 
       # POST /events
       def create
+        p "These are the params"
+        p event_params
         @event = Event.new(event_params)
 
         if @event.save
+          p "It got this far"
+          p @event.image_urls
           render json: @event, status: :created, location: @event
         else
           render json: @event.errors, status: :unprocessable_entity
+          p "Failed to add image"
         end
       end
 
