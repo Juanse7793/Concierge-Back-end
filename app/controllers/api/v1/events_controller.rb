@@ -5,7 +5,7 @@ module Api
 
       # GET /events
       def index
-        @events = Event.all
+        @events = Tour.includes( :images_attachments).all
 
         render json: @events
       end
