@@ -15,7 +15,7 @@ tomorrowland = Event.create(name: "tomorrowland", location: "USA", price: 1000,
 yesterland = Event.create(name: "yesterland", location: "USA", price: 100,
    start_date: "09/12/2022", end_date: "12/12/2022")
 
-yesterland.image.attach(io: File.open(File.join(Rails.root,'app/assets/images/concierge.png')), filename: 'concierge.png')
+yesterland.images.attach(io: File.open(File.join(Rails.root,'app/assets/images/concierge.png')), filename: 'concierge.png')
 
 
 reservation1 = Reservation.create(date: "10/12/2022", city: "Barcelona", user_id: tafara.id, event_id: tomorrowland.id)

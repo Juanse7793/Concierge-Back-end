@@ -1,0 +1,11 @@
+development:
+  cloud_name: "concierge2022"
+  api_key: "182965846448365"
+  api_secret: "4__lDVzK9cVKewbbeW0GNPSKlvE"
+  secure: true
+
+production:
+  cloud_name: "concierge2022"
+  api_key: "182965846448365"
+  api_secret: "4__lDVzK9cVKewbbeW0GNPSKlvE"
+  secure: true
