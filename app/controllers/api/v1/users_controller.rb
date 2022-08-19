@@ -5,7 +5,7 @@ module Api
 
       # GET /users
       def index
-        @users = User.all
+        @users = User.includes(:reservations).all
 
         render json: @users
       end

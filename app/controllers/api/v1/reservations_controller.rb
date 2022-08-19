@@ -5,7 +5,8 @@ module Api
 
       # GET /reservations
       def index
-        @reservations = Reservation.all
+        @user = User.find(params[:user_id])
+        @reservations = Reservation.where(user_id: @user.id)
 
         render json: @reservations
       end
@@ -49,7 +50,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def reservation_params
-        params.permit(:date, :city, :user_id, :event_id)
+        params.permit(:start, :end, :city, :user_id, :event_id)
       end
     end
   end
