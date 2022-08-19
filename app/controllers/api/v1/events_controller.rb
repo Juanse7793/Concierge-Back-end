@@ -5,7 +5,7 @@ module Api
 
       # GET /events
       def index
-        @events = Event.includes( :images_attachments).all
+        @events = Event.includes(:images_attachments).all
 
         render json: @events
       end
@@ -17,17 +17,17 @@ module Api
 
       # POST /events
       def create
-        p "These are the params"
+        p 'These are the params'
         p event_params
         @event = Event.new(event_params)
 
         if @event.save
-          p "It got this far"
+          p 'It got this far'
           p @event.image_urls
           render json: @event, status: :created, location: @event
         else
           render json: @event.errors, status: :unprocessable_entity
-          p "Failed to add image"
+          p 'Failed to add image'
         end
       end
 
@@ -54,7 +54,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def event_params
-        params.permit(:name, :price, :start_date, :end_date, :location, images: [],)
+        params.permit(:name, :price, :start_date, :end_date, :location, images: [])
       end
     end
   end
