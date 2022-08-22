@@ -1,4 +1,3 @@
 class EventSerializer < ActiveModel::Serializer
-  attributes :id, :name, :location, :price, :image_urls
-  has_many :reservations
+  attributes :id, :name, :location, :price, :start_date, :end_date, :image_urls
 end
