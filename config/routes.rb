@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
-  mount Rswag::Api::Engine => '/api-docs'
-  root :to => 'api#v1#users'
+  mount Rswag::Api::Engine => '/api-docs', :as => 'swagger'
+  root :to => 'home#index'
 
   namespace :api do
     namespace :v1 do
