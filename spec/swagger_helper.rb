@@ -25,7 +25,7 @@ RSpec.configure do |config|
           url: 'https://{defaultHost}',
           variables: {
             defaultHost: {
-              default: 'ancient-lake-57758.herokuapp.com/api/v1/'
+              default: 'arcane-island-84220.herokuapp.com/api/v1/'
             }
           }
         }
