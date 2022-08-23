@@ -4,22 +4,18 @@ info:
   title: Concierge API V1
   version: v1
 paths:
-  "/events":
+  "/api/v1/events":
     get:
       summary: list events
-      tags:
-      - Events
       responses:
         '200':
           description: successful
     post:
       summary: create event
-      tags:
-      - Events
       responses:
         '200':
           description: successful
-  "/events/{id}":
+  "/api/v1/events/{id}":
     parameters:
     - name: id
       in: path
@@ -29,19 +25,25 @@ paths:
         type: string
     get:
       summary: show event
-      tags:
-      - Events
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update event
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update event
       responses:
         '200':
           description: successful
     delete:
       summary: delete event
-      tags:
-      - Events
       responses:
         '200':
           description: successful
-  "/users/{user_id}/reservations":
+  "/api/v1/users/{user_id}/reservations":
     parameters:
     - name: user_id
       in: path
@@ -51,19 +53,15 @@ paths:
         type: string
     get:
       summary: list reservations
-      tags:
-      - Reservations
       responses:
         '200':
           description: successful
     post:
       summary: create reservation
-      tags:
-      - Reservations
       responses:
         '200':
           description: successful
-  "/users/{user_id}/reservations/{id}":
+  "/api/v1/users/{user_id}/reservations/{id}":
     parameters:
     - name: user_id
       in: path
@@ -79,34 +77,36 @@ paths:
         type: string
     get:
       summary: show reservation
-      tags:
-      - Reservations
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update reservation
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update reservation
       responses:
         '200':
           description: successful
     delete:
       summary: delete reservation
-      tags:
-      - Reservations
       responses:
         '200':
           description: successful
-  "/users":
+  "/api/v1/users":
     get:
       summary: list users
-      tags:
-      - Users
       responses:
         '200':
           description: successful
     post:
       summary: create user
-      tags:
-      - Users
       responses:
         '200':
           description: successful
-  "/users/{id}":
+  "/api/v1/users/{id}":
     parameters:
     - name: id
       in: path
@@ -114,6 +114,26 @@ paths:
       required: true
       schema:
         type: string
+    get:
+      summary: show user
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update user
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update user
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete user
+      responses:
+        '200':
+          description: successful
 servers:
 - url: https://{defaultHost}
   variables:

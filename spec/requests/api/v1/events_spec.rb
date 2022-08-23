@@ -1,7 +1,7 @@
 require 'swagger_helper'
 
 RSpec.describe 'api/v1/events', type: :request do
-  path '/api/v1/' do
+  path '/api/v1/events' do
     get('list events') do
       response(200, 'successful') do
         after do |example|
