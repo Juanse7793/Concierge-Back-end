@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
+gem 'rswag'
 gem 'active_model_serializers'
 gem 'cloudinary'
 gem 'image_processing', '~> 1.2'
