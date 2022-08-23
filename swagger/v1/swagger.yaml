@@ -1,21 +1,24 @@
----
 openapi: 3.0.1
 info:
   title: Concierge API V1
   version: v1
 paths:
-  "/api/v1/events":
+  "/events":
     get:
       summary: list events
+      tags: 
+      - events
       responses:
         '200':
           description: successful
     post:
       summary: create event
+      tags: 
+      - events
       responses:
         '200':
           description: successful
-  "/api/v1/events/{id}":
+  "/events/{id}":
     parameters:
     - name: id
       in: path
@@ -25,25 +28,19 @@ paths:
         type: string
     get:
       summary: show event
-      responses:
-        '200':
-          description: successful
-    patch:
-      summary: update event
-      responses:
-        '200':
-          description: successful
-    put:
-      summary: update event
+      tags: 
+      - events
       responses:
         '200':
           description: successful
     delete:
       summary: delete event
+      tags: 
+      - events
       responses:
         '200':
           description: successful
-  "/api/v1/users/{user_id}/reservations":
+  "/users/{user_id}/reservations":
     parameters:
     - name: user_id
       in: path
@@ -53,15 +50,19 @@ paths:
         type: string
     get:
       summary: list reservations
+      tags: 
+      - reservations
       responses:
         '200':
           description: successful
     post:
       summary: create reservation
+      tags: 
+      - reservations
       responses:
         '200':
           description: successful
-  "/api/v1/users/{user_id}/reservations/{id}":
+  "/users/{user_id}/reservations/{id}":
     parameters:
     - name: user_id
       in: path
@@ -77,60 +78,30 @@ paths:
         type: string
     get:
       summary: show reservation
-      responses:
-        '200':
-          description: successful
-    patch:
-      summary: update reservation
-      responses:
-        '200':
-          description: successful
-    put:
-      summary: update reservation
+      tags: 
+      - reservations
       responses:
         '200':
           description: successful
     delete:
       summary: delete reservation
+      tags: 
+      - reservations
       responses:
         '200':
           description: successful
-  "/api/v1/users":
+  "/users":
     get:
       summary: list users
+      tags: 
+      - users
       responses:
         '200':
           description: successful
     post:
       summary: create user
-      responses:
-        '200':
-          description: successful
-  "/api/v1/users/{id}":
-    parameters:
-    - name: id
-      in: path
-      description: id
-      required: true
-      schema:
-        type: string
-    get:
-      summary: show user
-      responses:
-        '200':
-          description: successful
-    patch:
-      summary: update user
-      responses:
-        '200':
-          description: successful
-    put:
-      summary: update user
-      responses:
-        '200':
-          description: successful
-    delete:
-      summary: delete user
+      tags: 
+      - users
       responses:
         '200':
           description: successful
