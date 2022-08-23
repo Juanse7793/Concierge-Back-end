@@ -50,11 +50,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_18_151725) do
     t.date "end_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.date "start"
-    t.date "end"
+    t.date "date"
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

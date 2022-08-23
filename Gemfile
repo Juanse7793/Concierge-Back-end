@@ -5,6 +5,7 @@ ruby '3.1.2'
 gem 'active_model_serializers'
 gem 'cloudinary'
 gem 'image_processing', '~> 1.2'
+gem 'rswag'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
