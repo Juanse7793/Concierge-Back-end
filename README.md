@@ -4,7 +4,10 @@
 
 > At CONCIERGE it’s easy to find and book your dream all-inclusive event package so you can experience what makes all-inclusive events the ultimate stress-free escape. See an incredible selection of destinations and deals with a few clicks, and more!
 
-![screenshot](./app_screenshot.png)
+![WhatsApp Image 2022-08-23 at 11 10 07 PM](https://user-images.githubusercontent.com/97033479/186270497-880919cc-fb56-48e8-919b-602046e2c633.jpeg)
+
+![WhatsApp Image 2022-08-23 at 11 25 31 PM](https://user-images.githubusercontent.com/97033479/186270417-98055da8-26aa-4f14-9040-11d806494c86.jpeg)
+
 
 You can find it's front-end at https://github.com/Juanse7793/Final-Capstone-front-end.
 
@@ -43,6 +46,11 @@ To get a local copy up and running follow these simple example steps:
 ### Deployment
 This app has been deployed to the following location:
 https://concierge-jtz.herokuapp.com/api-docs/index.html
+### Endpoints 
+- Root (API Docs): [API Docs](https://concierge-jtz.herokuapp.com/api-docs/index.html)
+- Events: [Events](https://concierge-jtz.herokuapp.com/api/v1/events)
+- Reservations: [Reservations](https://concierge-jtz.herokuapp.com/api/v1/reservations)
+- Users: [Users](https://concierge-jtz.herokuapp.com/api/v1/users)
 ## Authors
 
 👤 **Humaira Zaman**
