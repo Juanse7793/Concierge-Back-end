@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: Concierge API V1
+  title: "\U0001F386 Concierge API V1"
   version: v1
 paths:
   "/events":
