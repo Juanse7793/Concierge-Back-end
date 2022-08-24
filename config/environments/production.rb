@@ -1,7 +1,7 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.routes.default_url_options = {
-  host: 'https://ancient-lake-57758.herokuapp.com'
+  host: 'https://blooming-springs-95964.herokuapp.com'
 }
 
 
