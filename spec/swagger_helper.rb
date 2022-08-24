@@ -25,7 +25,7 @@ RSpec.configure do |config|
           url: 'https://{defaultHost}',
           variables: {
             defaultHost: {
-              default: 'blooming-springs-95964.herokuapp.com/api/v1/'
+              default: 'concierge-jtz.herokuapp.com/api/v1/'
             }
           }
         }
