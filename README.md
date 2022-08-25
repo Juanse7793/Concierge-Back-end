@@ -6,7 +6,7 @@
 
 ![WhatsApp Image 2022-08-23 at 11 10 07 PM](https://user-images.githubusercontent.com/97033479/186270497-880919cc-fb56-48e8-919b-602046e2c633.jpeg)
 
-![WhatsApp Image 2022-08-23 at 11 25 31 PM](https://user-images.githubusercontent.com/97033479/186270417-98055da8-26aa-4f14-9040-11d806494c86.jpeg)
+![WhatsApp Image 2022-08-23 at 11 25 31 PM](./public/image%20(1).png)
 
 
 You can find it's front-end at https://github.com/Juanse7793/Final-Capstone-front-end.
@@ -51,6 +51,12 @@ https://concierge-jtz.herokuapp.com/api-docs/index.html
 - Events: [Events](https://concierge-jtz.herokuapp.com/api/v1/events)
 - Reservations: [Reservations](https://concierge-jtz.herokuapp.com/api/v1/reservations)
 - Users: [Users](https://concierge-jtz.herokuapp.com/api/v1/users)
+
+### Kanban Board
+- [Kanban](https://github.com/users/Juanse7793/projects/2/views/1)
+- ![screenshot](https://user-images.githubusercontent.com/96317674/183961621-dc659e79-6ddb-46aa-b2c2-72c9b87842b4.png)
+- This project was made by the following three devs:
+
 ## Authors
 
 👤 **Humaira Zaman**
